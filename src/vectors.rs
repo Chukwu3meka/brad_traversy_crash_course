@@ -10,6 +10,17 @@ pub fn run() {
     // Re-assign a value
     numbers[2] = 20;
 
+    // Add on to vetor
+    numbers.push(5);
+    numbers.push(6);
+
+    println!("Numbers {:?}", numbers);
+
+    // Pop of last value
+    numbers.pop();
+
+    println!("Numbers {:?}", numbers);
+
     // Get single val
     println!("Single Value: {}", numbers[2]);
 
@@ -22,5 +33,17 @@ pub fn run() {
     // get slice
     let slice: &[i32] = &numbers[1..3];
 
-    println!("Slice: {:?}", slice)
+    println!("Slice: {:?}", slice);
+
+    // Lopp through vector values
+    for x in numbers.iter() {
+        println!("Number: {}", x);
+    }
+
+    // loop & mutate values
+    for x in numbers.iter_mut() {
+        *x *= 2;
+    }
+
+    println!("Numbers {:?}", numbers)
 }
