@@ -1,7 +1,7 @@
-mod vectors;
+mod conditionals;
 
 fn main() {
     // println!("Hello, world!");
 
-    vectors::run();
+    conditionals::run();
 }
