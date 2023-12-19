@@ -3,7 +3,7 @@
 pub fn run() {
     let age: u8 = 18;
     let check_id: bool = false;
-    let knows_person_of_age = true;
+    let knows_person_of_age: bool = true;
 
     // If/Else
     if (age >= 21 && check_id) || knows_person_of_age {
