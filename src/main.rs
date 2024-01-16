@@ -1,7 +1,7 @@
-mod loops;
+mod cli;
 
 fn main() {
     // println!("Hello, world!");
 
-    loops::run();
+    cli::run();
 }
